@@ -1,7 +1,6 @@
 languageCode = "en-us"
 title = "Rochester 2600"
-baseurl = "https://rochester26002.github.io/"
-publishDir = "docs"
+baseurl = "https://www.rochester2600.com/"
 theme = "after-dark"
 
 builddrafts = true
