@@ -10,7 +10,7 @@ jobs:
       - run: git submodule update --init
       - run:
           name: "Run hugo"
-          command: hugo -v -s src -d public
+          command: hugo -v 
       - persist_to_workspace:
           root: project
           paths:
