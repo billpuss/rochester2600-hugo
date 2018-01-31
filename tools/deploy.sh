@@ -9,4 +9,4 @@ mv .boto /home/circleci/.boto
 #gsutil ls
 ENDPOINT="gs://staging.rochester2600.com"
 echo "Uploading to $ENDPOINT"
-gsutil cp -p ../build/* $ENDPOINT
+gsutil cp -p /home/circleci/public/* $ENDPOINT
