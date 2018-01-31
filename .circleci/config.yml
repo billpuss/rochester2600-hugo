@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: felicianotech/docker-hugo:latest
+    working_cirectory: ~/project/
     steps:
       - checkout
       - run: git submodule sync
@@ -17,7 +18,7 @@ jobs:
   deploy:
     docker:
       - image: circleci/python:2
-
+    working_directory: ~/project
     steps:
       #- checkout
 
