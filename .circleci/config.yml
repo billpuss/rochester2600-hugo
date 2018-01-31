@@ -13,7 +13,7 @@ jobs:
           root: /home/circleci
              paths:
                 - repo
-deploy:
+  deploy:
     docker:
       - image: circleci/python:2
     #working_directory: ~/
