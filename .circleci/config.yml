@@ -5,8 +5,8 @@ jobs:
       - image: felicianotech/docker-hugo:latest
     steps:
       - checkout:
-          - git submodule sync
-          - git submodule update --init
+      - run: git submodule sync
+      - run: git submodule update --init
       - run:
           name: "Run hugo"
           command: hugo -v -s src -d public
