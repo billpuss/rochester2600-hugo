@@ -4,7 +4,7 @@ jobs:
     docker:
       - image: felicianotech/docker-hugo:latest
     steps:
-      - checkout:
+      - checkout
       - run: git submodule sync
       - run: git submodule update --init
       - run:
