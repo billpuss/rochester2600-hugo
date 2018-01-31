@@ -12,7 +12,7 @@ jobs:
           name: "Run hugo"
           command: hugo -v 
       - persist_to_workspace:
-          root: project
+          root: /root/project
           paths:
              - public
   deploy:
@@ -32,7 +32,7 @@ jobs:
           at: project
 
       - run: echo 'export PATH="$PATH:/home/circleci/.local/bin"' >> $BASH_ENV
-      - run: cd ~/repo
+      - run: cd ~/project
       - run:
           name: fucking gsutil install
           command: |
