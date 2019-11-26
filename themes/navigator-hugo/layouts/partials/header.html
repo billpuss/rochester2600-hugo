@@ -18,10 +18,6 @@
                     </button>
                     <!-- Icones & drapeaux de choix des langues -->
                     <div id="drapeaux">
-                        <!-- Pour passer la langue actuelle (variable globale) dans la range => explicitement -->
-                        {{ range .Site.Params.listeLangues }}
-                        {{ partial "flags.html" (dict "site" $.Site "liste" .) }}
-                        {{ end }}
                     </div>
                     <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav ml-auto">

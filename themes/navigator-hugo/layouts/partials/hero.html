@@ -5,10 +5,12 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="video-player">
-                    <img class="img-fluid rounded" src="{{ with .Site.Params.hero.videoThumb }}{{.| absURL }}{{ end }}" alt="video-thumb">
+                    <img class="img-fluid rounded" src="{{ with .Site.Params.hero.videoThumb }}{{.| absURL }}{{ end }}" alt="main-thumb">
+		    {{ if isset .Site.Params.hereo "videoURL" }}
                     <a class="play-icon" href="javascript:void(0)">
                         <i class="tf-ion-play" data-video="{{ with .Site.Params.hero.videoURL }}{{.}}{{ end }}?autoplay=1"></i>
                     </a>
+		    {{ end }}
                 </div>
             </div>
             <div class="col-md-6">

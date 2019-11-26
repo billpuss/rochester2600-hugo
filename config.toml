@@ -1,8 +1,8 @@
 baseURL = "https://www.rochester2600.com"
 languageCode = "en-us"
-title = "Rochester 2600 | Rochesters hacking and infosec group"
+title = "Rochester 2600 | Rochester's hacking and infosec group"
 theme = "navigator-hugo"
-summaryLength = 100
+summaryLength = 500
 
 # Build robots.txt file
 enableRobotsTXT = true
@@ -27,7 +27,7 @@ DefaultContentLanguage = "en"
     
     # meta data
     author = "Themefisher"
-    description = "This is meta description"
+    description = "Rochester, NY hacking and infosec community meetup"
 
 # Gestion des langues : FR / EN / NL / DE
 [Languages]
@@ -37,7 +37,7 @@ DefaultContentLanguage = "en"
     [Languages.en]
     weight = 1
     languageCode = "en-us"
-    title = "Example site multi-language"
+    title = "Rochester 2600"
     dateFormat = "January 2, 2006"
 
     home = "Home"
@@ -64,9 +64,9 @@ DefaultContentLanguage = "en"
         description = "Rochester's longest running hacking and information security meetup group. A community of locals interested in discussing security, sharing knowledge, and enjoying technology."
         button  = true
         btnText = "Next Meeting"
-        btnURL  = "#blog"
-        videoThumb = "images/slider/video-player-thumb.jpg"
-        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
+        #btnURL  = "#blog"
+        videoThumb = "images/roc2600_logo_white.png"
+        #videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
     [Languages.en.params.aboutSm]
@@ -109,15 +109,15 @@ DefaultContentLanguage = "en"
     # Navbar Menus
     [[menu.nav]]
         name    = "about"
-        url     = "#about"
+        url     = "/#about"
         weight  = 2
     [[menu.nav]]
         name    = "meetings"
-        url     = '#meetings'
+        url     = '/meetings'
         weight  = 3
     [[menu.nav]]
         name    = "presentations"
-        url     = "#presentations"
+        url     = "/#presentations"
         weight  = 4
     [[menu.nav]]
         name    = "contact"

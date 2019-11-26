@@ -3,7 +3,10 @@ body {
   line-height: 1.4;
   font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background-color: #fff;
+  background-color: #eee;
+  background-image: url("/images/roc2600_logo_white.png");
+  background-attachment: fixed;
+  background-size: 100%;
 }
 
 p {
@@ -563,7 +566,7 @@ a:focus, a:hover {
 }
 
 .hero-area {
-  padding: 150px 0;
+  padding: 50px 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1485,6 +1488,7 @@ a:focus, a:hover {
 
 .post-item .post-thumb img {
   height: auto;
+  border-radius: 100rem!important;
 }
 
 .post-item .post-title {
@@ -1528,6 +1532,9 @@ a:focus, a:hover {
   padding-bottom: 100px;
   padding-top: 150px;
 }
+
+#blog-single .section{
+ }
 
 #blog-page {
   margin: 0 0 40px;
