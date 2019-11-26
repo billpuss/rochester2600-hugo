@@ -1,57 +1,127 @@
-baseURL = "http://www.rochester2600.com"
+baseURL = "https://www.rochester2600.com"
 languageCode = "en-us"
-title = "Rochester 2600"
-theme = "minimal"
-disqusShortname = "username" # delete this to disable disqus comments
+title = "Rochester 2600 | Rochesters hacking and infosec group"
+theme = "navigator-hugo"
+summaryLength = 100
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
 googleAnalytics = ""
 
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+#defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+# Site Params
 [params]
-    author = "Calin Tataru"
-    description = "Personal blog theme powered by Hugo"
-    githubUsername = "#rochester2600"
-    accent = "#ff0028"
-    showBorder = true
-    backgroundColor = "#EEE"
-    font = "Raleway" # should match the name on Google Fonts!
-    highlight = true
-    highlightStyle = "default"
-    highlightLanguages = ["go", "python", "kotlin", "scala", "swift"]
+    logo = "images/logo.png"
 
-[[menu.main]]
-    url = "/"
-    name = "Home"
+    # Gestion des langues : FR / EN / NL / DE
+    [[Params.listeLangues]]
+    code = "en"
+    
+    # meta data
+    author = "Themefisher"
+    description = "This is meta description"
+
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+
+
+    ############# 2 - Site en ENGLISH
+    [Languages.en]
     weight = 1
+    languageCode = "en-us"
+    title = "Example site multi-language"
+    dateFormat = "January 2, 2006"
 
-[[menu.main]]
-    url = "/about/"
-    name = "About"
-    weight = 2
+    home = "Home"
+    logo = "images/logo.png"
+    menufixed = false
 
-[[menu.main]]
-    url = "/home/"
-    name = "Posts"
-    weight = 3
+    #footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
+    #footerServiceTitle = "Service"
+    #footerQuicklinkTitle = "Quicklinks"
+    #footerAboutTitle = "About"
+    #footerSubscribeTitle = "Subscribe"
 
-[[menu.main]]
-    url = "/presentations/"
-    name = "Presentations"
-    weight = 4
+# Blog Section On Homepage
+    [Languages.en.params.blog]
+        enable  = true
+        topTitle= "Latest meeting updates"
+        title   = "Meetings"
+        subtitle= "Look below for the latest information on meetings. Click on the meeting to see the list of presentations."
 
-# Social icons to be shown on the right-hand side of the navigation bar.
-# The "name" field should match the name of the icon in Font Awesome.
-# The list of available icons can be found at http://fontawesome.io/icons.
+    # Hero Area Section
+    [Languages.en.params.hero]
+        enable  = true
+        heading = "Rochester 2600"
+        description = "Rochester's longest running hacking and information security meetup group. A community of locals interested in discussing security, sharing knowledge, and enjoying technology."
+        button  = true
+        btnText = "Next Meeting"
+        btnURL  = "#blog"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
-[[menu.icon]]
-    url = "mailto:me@example.com"
-    name = "envelope-o"
-    weight = 1
+    # About 2 Section
+    [Languages.en.params.aboutSm]
+        enable  = false
+        title   = "A community of people that happen to like security"
+        description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
-[[menu.icon]]
-    url = "https://github.com/username/"
-    name = "github"
-    weight = 2
+    
 
-[[menu.icon]]
-    url = "https://twitter.com/roc2600/"
-    name = "twitter"
-    weight = 3
+    # Contact Section
+    [Languages.en.params.contact]
+        enable  = false
+        topTitle= "DROP US A NOTE"
+        title   = "Contact Us."
+        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        address = "14/05, Stockhome <br> Victori Palace , United States"
+        phone   = "(03) 9283 2617"
+        fax     = "+61 3827 3590"
+        facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/"
+        #linkedin= "https://www.linkedin.com/"
+        dribbble= "https://dribbble.com/"
+        instagram= "https://www.instagram.com/"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
+
+    # Call to Action Section on About Page
+    [Languages.en.params.cta]
+        enable  = false
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
+
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "about"
+        url     = "#about"
+        weight  = 2
+    [[menu.nav]]
+        name    = "meetings"
+        url     = '#meetings'
+        weight  = 3
+    [[menu.nav]]
+        name    = "presentations"
+        url     = "#presentations"
+        weight  = 4
+    [[menu.nav]]
+        name    = "contact"
+        url     = "#contact"
+        weight  = 6
+
+    
