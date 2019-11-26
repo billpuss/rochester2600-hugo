@@ -1,0 +1,42 @@
+enable  : true
+topTitle: Recent talks
+title   : Presentations
+subtitle: Below are an example of some of the presentations we've done. Not all talks are posted so you should show up in person to get the full effect. 
+
+filtermenu :
+  - name      : Hacking
+    category  : hacking
+
+  - name      : Securing
+    category  : securing
+
+  - name      : Other
+    category  : development
+
+  - name      : NSFW
+    category  : nsfw
+
+item   :
+  - title : AirBnB Postcard
+    image : images/presentation/presentations-1.jpg
+    category  : photography
+
+  - title : D Design
+    image : images/presentations/presentations-2.jpg
+    category  : ios, design
+
+  - title : Xbox 360
+    image : images/presentations/presentations-3.jpg
+    category  : photography, development
+
+  - title : Ballon Card
+    image : images/presentations/presentations-4.jpg
+    category  : ios
+
+  - title : Ready Toons
+    image : images/presentations/presentations-5.jpg
+    category  : design
+
+  - title : Illustration
+    image : images/presentations/presentations-6.jpg
+    category  : development

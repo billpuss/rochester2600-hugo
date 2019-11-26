@@ -1,0 +1,20 @@
+enable  : true
+item    :
+  - positionRight : false
+    image : images/about/about-1.jpg
+    title : Our Attendees
+    description : >
+      Rochester 2600 hosts information security professionals, IT and operations teams, hackers, nerds, lawyers, law enforcement, activists, and anyone that's interested in learning about security. It's a place to meetup and share information, ideas, and technical information witha group. Attend a meeting to learn about information security from professionals and amateurs alike. 
+
+  - positionRight : true
+    image : images/about/about-2.jpg
+    title : What is 2600?
+    description : >
+            2600 is a reference to 2600: Hacker Quarterly. A periodical that's been around since the 80's. We host our meetings on the first Friday of every month because that's when all 2600 meetings should be hosted. We don't have any official relationship with the org, it's just a platform to gather around. 
+
+  - positionRight : false
+    image : images/about/about-3.jpg
+    title : What to expect
+    description : >
+            If you've never attended a meeting, we are generally loosely organized. We present on the latest security news of the month and usually follow it with at least one presentations from one of our attendees. Expect to laugh and interact with the rest of the group. Bring a laptop if you wish but it's usually unnecessary.
+      
