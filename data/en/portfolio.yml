@@ -10,33 +10,85 @@ filtermenu :
   - name      : Securing
     category  : securing
 
-  - name      : Other
+  - name      : Development
     category  : development
 
   - name      : NSFW
     category  : nsfw
 
 item   :
-  - title : AirBnB Postcard
-    image : images/presentation/presentations-1.jpg
-    category  : photography
+  - title : Package Mangelement
+    image : images/presentations/package-mangelement.png
+    category  : securing
 
-  - title : D Design
-    image : images/presentations/presentations-2.jpg
-    category  : ios, design
+  - title : Hardening SSH Configuration
+    image : images/presentations/hardening-ssh-configurations.png
+    category  : securing
 
-  - title : Xbox 360
-    image : images/presentations/presentations-3.jpg
-    category  : photography, development
+  - title : Next Generation Tor Protocol
+    image : images/presentations/next-generation-tor-protocol.png
+    category  : hacking, other
 
-  - title : Ballon Card
-    image : images/presentations/presentations-4.jpg
-    category  : ios
+  - title : Two photons, one ket
+    image : images/presentations/two-photons-one-ket.png
+    category  : other
 
-  - title : Ready Toons
-    image : images/presentations/presentations-5.jpg
-    category  : design
+  - title : DNSSEC
+    image : images/presentations/dnssec.png
+    category  : securing
 
-  - title : Illustration
-    image : images/presentations/presentations-6.jpg
-    category  : development
+  - title : K8s - Pods to root in minutes
+    image : images/presentations/k8s-pods-to-root-in-minutes.png
+    category  : development, devops
+
+  - title : The Attrocities of Desktop Keyrings
+    image : images/presentations/the-attrocities-of-desktop-keyrings.png
+    category  : hacking, development
+
+  - title : Web Browsing Like It's 1984
+    image : images/presentations/web-browsing-like-its-1984.png
+    category  : hacking
+
+  - title : The State of WiFi Security 
+    image : images/presentations/the-state-of-wifi-security.png
+    category  : hacking, securing
+
+  - title : Just (Mouse) Jackin' It
+    image : images/presentations/just-mouse-jackin-it.png
+    category  : hacking
+
+  - title : Jelquing With Ethereum
+    image : images/presentations/jelqing-with-ethereum.png
+    category  : hacking, cryptocurrency
+
+  - title : Docker Security
+    image : images/presentations/docker-security.png
+    category  : hacking, securing
+
+  - title : NSA and VPN
+    image : images/presentations/nsa-and-vpn.png
+    category  : hacking, securing
+
+  - title : Corporate Spies
+    image : images/presentations/corporate-spies.png
+    category  : hacking
+
+  - title : Laverna
+    image : images/presentations/laverna.png
+    category  : securing
+
+  - title : RTLSDR
+    image : images/presentations/rtlsdr.png
+    category  : hacking
+
+  - title : Anti-Virus Evasion Deuce
+    image : images/presentations/anti-virus-evasion-deuce.png
+    category  : hacking
+
+  - title : Liberte & Cables vs TAILS & Bitmessage
+    image : images/presentations/liberte-and-cables.png
+    category  : Hacking, securing
+
+  - title : A Brief History of Teledildonics
+    image : images/presentations/a-brief-history-of-teledildonics
+    category  : nsfw
