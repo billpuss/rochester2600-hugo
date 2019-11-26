@@ -3,6 +3,7 @@ body {
   line-height: 1.4;
   font-family: "Titillium Web", sans-serif;
   -webkit-font-smoothing: antialiased;
+  background-color: #fff;
 }
 
 p {
@@ -27,8 +28,7 @@ h1, h2, h3, h4, h5, h6 {
 
 ol, ul {
   margin: 0;
-  padding: 0;
-  list-style: none;
+  
 }
 
 figure {
@@ -468,7 +468,8 @@ a:focus, a:hover {
 
 .navigation {
   transition: .3s all;
-  background: #1f2532;
+  #background: #1f2532;
+  background: #fe2d75;
 }
 
 .navigation .navbar-nav > li.active a {
@@ -476,7 +477,8 @@ a:focus, a:hover {
 }
 
 .navigation .navbar-nav > li > a {
-  color: #707d8f;
+  #color: #707d8f;
+  color: #fff;
   font-size: 15px;
   line-height: 26px;
   padding: 20px 15px !important;
@@ -497,7 +499,7 @@ a:focus, a:hover {
 
 .navigation .navbar-nav > li > a:hover, .navigation .navbar-nav > li > a:active, .navigation .navbar-nav > li > a:focus {
   background: none;
-  color: #f0326b;
+  color: #000;
 }
 
 .navigation .navbar-toggler {
@@ -572,7 +574,8 @@ a:focus, a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background: #1f2532;
+  #background: #1f2532;
+  background: #000;
 }
 
 @media (max-width: 480px) {
