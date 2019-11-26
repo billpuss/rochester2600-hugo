@@ -1,51 +1,57 @@
+baseURL = "http://www.rochester2600.com"
 languageCode = "en-us"
 title = "Rochester 2600"
-baseurl = "https://www.rochester2600.com/"
-theme = "after-dark"
-
-builddrafts = true
-canonifyurls = false
-contentdir = "content"
-author = "Rochester2600"
-pluralizelisttitles = false
-
-[permalinks]
-blog = "blog/:slug/"
+theme = "minimal"
+disqusShortname = "username" # delete this to disable disqus comments
+googleAnalytics = ""
 
 [params]
-enableRobotsTXT = true # Suggested, enable robots.txt file
-googleAnalytics = "UA-10542864-1" # Optional, add tracking Id for analytics
-disqusShortname = "" # Optional, add Disqus shortname for comments
-SectionPagesMenu = "main" # Enable menu system for lazy bloggers
-footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+    author = "Calin Tataru"
+    description = "Personal blog theme powered by Hugo"
+    githubUsername = "#rochester2600"
+    accent = "#ff0028"
+    showBorder = true
+    backgroundColor = "#EEE"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["go", "python", "kotlin", "scala", "swift"]
 
-description = "Rochester, NY's hacker meetup" # Suggested, controls default description meta
-author = "ROC2600" # Optional, controls author name display on posts
-hide_author = true # Optional, set true to hide author name on posts
-show_menu = true # Optional, set true to enable section menu
-powered_by = false # Optional, set false to disable credits
-images = [] # Suggested, adds default OpenGraph images
-paginate = 5
-
-
-[menu]
-  [[menu.main]]
-    name = "Home"
-    weight = 0
-    identifier = "home"
+[[menu.main]]
     url = "/"
-  [[menu.main]]
-    name = "News"
+    name = "Home"
     weight = 1
-    identifier = "news"
-    url = "/news/"
-  [[menu.main]]
+
+[[menu.main]]
+    url = "/about/"
     name = "About"
     weight = 2
-    identifier = "about"
-    url = "/about/"
-  [[menu.main]]
-    name = "Presentations"
+
+[[menu.main]]
+    url = "/home/"
+    name = "Posts"
     weight = 3
-    identifier = "presentations"
+
+[[menu.main]]
     url = "/presentations/"
+    name = "Presentations"
+    weight = 4
+
+# Social icons to be shown on the right-hand side of the navigation bar.
+# The "name" field should match the name of the icon in Font Awesome.
+# The list of available icons can be found at http://fontawesome.io/icons.
+
+[[menu.icon]]
+    url = "mailto:me@example.com"
+    name = "envelope-o"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/username/"
+    name = "github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://twitter.com/roc2600/"
+    name = "twitter"
+    weight = 3
