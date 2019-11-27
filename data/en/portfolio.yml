@@ -13,13 +13,14 @@ filtermenu :
   - name      : Development
     category  : development
 
+    
   - name      : NSFW
     category  : nsfw
 
 item   :
   - title : Package Mangelement
     image : images/presentations/package-mangelement.png
-    category  : securing
+    category  : securing, hacking
 
   - title : Hardening SSH Configuration
     image : images/presentations/hardening-ssh-configurations.png
@@ -31,11 +32,11 @@ item   :
 
   - title : Two photons, one ket
     image : images/presentations/two-photons-one-ket.png
-    category  : other
+    category  : other, nsfw
 
   - title : DNSSEC
     image : images/presentations/dnssec.png
-    category  : securing
+    category  : securing, networking
 
   - title : K8s - Pods to root in minutes
     image : images/presentations/k8s-pods-to-root-in-minutes.png
@@ -55,15 +56,15 @@ item   :
 
   - title : Just (Mouse) Jackin' It
     image : images/presentations/just-mouse-jackin-it.png
-    category  : hacking
+    category  : hacking, other
 
   - title : Jelquing With Ethereum
     image : images/presentations/jelqing-with-ethereum.png
-    category  : hacking, cryptocurrency
+    category  : hacking, cryptocurrency, nsfw
 
   - title : Docker Security
     image : images/presentations/docker-security.png
-    category  : hacking, securing
+    category  : hacking, securing, devops
 
   - title : NSA and VPN
     image : images/presentations/nsa-and-vpn.png
@@ -71,7 +72,7 @@ item   :
 
   - title : Corporate Spies
     image : images/presentations/corporate-spies.png
-    category  : hacking
+    category  : hacking, other
 
   - title : Laverna
     image : images/presentations/laverna.png
@@ -79,11 +80,11 @@ item   :
 
   - title : RTLSDR
     image : images/presentations/rtlsdr.png
-    category  : hacking
+    category  : hacking, other
 
   - title : Anti-Virus Evasion Deuce
     image : images/presentations/anti-virus-evasion-deuce.png
-    category  : hacking
+    category  : hacking, networking
 
   - title : Liberte & Cables vs TAILS & Bitmessage
     image : images/presentations/liberte-and-cables.png
