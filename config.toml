@@ -1,4 +1,4 @@
-baseURL = "https://www.rochester2600.com"
+baseURL = "https://staging.rochester2600.com"
 languageCode = "en-us"
 title = "Rochester 2600 | Rochester's hacking and infosec group"
 theme = "navigator-hugo"
@@ -65,7 +65,7 @@ DefaultContentLanguage = "en"
         button  = true
         btnText = "Next Meeting"
         #btnURL  = "#blog"
-        videoThumb = "images/roc2600_logo_white.png"
+        videoThumb = "images/header_logo.png"
         #videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
     # About 2 Section
@@ -78,18 +78,13 @@ DefaultContentLanguage = "en"
 
     # Contact Section
     [Languages.en.params.contact]
-        enable  = false
-        topTitle= "DROP US A NOTE"
-        title   = "Contact Us."
-        subtitle= "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum reiciendis quasi itaque, obcaecati atque sit!"
+        enable  = true
+        topTitle= "Ways to stay involved"
+        title   = "Getting Involved"
+        subtitle= "If you're interested in finding out more, consider RSVP'ing to a meeting so we know how many people might show up. Follow us on Twitter for the latest updates. Hangout with some of us in the #security channel of RocDev."
         address = "14/05, Stockhome <br> Victori Palace , United States"
-        phone   = "(03) 9283 2617"
-        fax     = "+61 3827 3590"
-        facebook= "https://www.facebook.com/"
-        twitter = "https://twitter.com/"
-        #linkedin= "https://www.linkedin.com/"
-        dribbble= "https://dribbble.com/"
-        instagram= "https://www.instagram.com/"
+        #facebook= "https://www.facebook.com/"
+        twitter = "https://twitter.com/roc2600"
         mapLatitude = "51.507351"
         mapLongitude= "-0.127758"
         mapMarker   = "images/marker.png"
@@ -117,11 +112,16 @@ DefaultContentLanguage = "en"
         weight  = 3
     [[menu.nav]]
         name    = "presentations"
-        url     = "/#presentations"
+        url     = "/presentations"
         weight  = 4
     [[menu.nav]]
         name    = "contact"
-        url     = "#contact"
+        url     = "/contact"
         weight  = 6
+
+    [[menu.nav]]
+        name    = "news"
+        url     = "https://links.rochester2600.com"
+        weight  = 7
 
     

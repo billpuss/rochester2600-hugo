@@ -14,108 +14,109 @@
                 </div>
             </div>
         </div>
-        <div class="row">
-            {{ "<!-- Contact Details -->" | safeHTML }}
-            <div class="col-12 col-md-6">
-                <div class="map">
-                    <div id="map" data-lat="{{ .Site.Params.contact.mapLatitude }}" data-long="{{ .Site.Params.contact.mapLongitude }}" data-marker="{{ .Site.Params.contact.mapMarker | absURL }}"></div>
-                </div>
-            </div>
-            {{ "<!-- Contact Form -->" | safeHTML }}
-            <div class="contact-form col-12 col-md-6 ">
-                <form id="contact-form" method="post" action="sendmail.php" role="form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" class="form-control" name="name" id="name">
-                    </div>
 
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" class="form-control" name="email" id="email">
-                    </div>
 
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" class="form-control" name="subject" id="subject">
-                    </div>
-
-                    <div class="form-group">
-                        <textarea rows="6" placeholder="Message" class="form-control" name="message" id="message"></textarea>
-                    </div>
-
-                    <div id="mail-success" class="success">
-                        Thank you. The Mailman is on His Way :)
-                    </div>
-
-                    <div id="mail-fail" class="error">
-                        Sorry, don't know what happened. Try later :(
-                    </div>
-
-                    <div id="cf-submit">
-                        <input type="submit" id="contact-submit" class="btn btn-transparent" value="Submit">
-                    </div>
-                </form>
-            </div>
-        </div>
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="address-block contact-meta-block">
-                    <i class="tf-ion-android-pin"></i>
-                    <h4>Our Location</h4>
-                    {{ with .Site.Params.contact.address }}<p>{{ . | safeHTML }}</p>{{ end }}
+                    <i class="fab fa-meetup"></i>
+                    <h4>RSVP to Meetings</h4>
+                    <p>Let us know if you're coming so we can leave the light on for you. Meetup.com is our 
+                    our primary place where we let you know about the latest meeting location and times.</p>
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item">
+                            <a href="https://www.meetup.com/Interlock-Rochester-Hackerspace/">
+                                <i class="fab fa-meetup"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/roc2600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="mailto:infoREPLACETHISTEXT@rochester2600.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="https://www.facebook.com/groups/rochester2600/">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-12 col-md-4">
-                <div class="phone-block contact-meta-block">
-                    <i class="tf-ion-ios-telephone"></i>
-                    <h4>Call Us</h4>
-                    <p>
-                         {{ with .Site.Params.contact.phone }}Office: {{.}} {{ end }} 
-                        <br> {{ with .Site.Params.contact.fax }} Fax: {{ . }} {{ end }}
-                    </p>
+                <div class="address-block contact-meta-block">
+                    <i class="fab fa-twitter"></i>
+                    <h4>Latest Announcements</h4>
+                    <p>Follow us on Twitter for updates on latest meetings, new locations, or parking suggestions. 
+                    If there's a sudden change, we'll announce it here. We also share information about our partner projects.</p>
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/roc2600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="address-block contact-meta-block">
+                    <i class="fab fa-slack"></i>
+                    <h4>Chat With The Community</h4>
+                    <p>Join us on RocDev's Slack in the #security channel. You can signup on the RocDev website in the link below: </p>
+                    <ul class="list-inline social-icon">
+                    <li class="list-inline-item">
+                            <a href="https://rocdev.slack.com/messages/#security/">
+                                <i class="fab fa-slack"></i>
+                            </a>
+                        </li>
+                    <li class="list-inline-item">
+                            <a href="https://www.rocdev.com">
+                                <i class="fas fa-globe"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="address-block contact-meta-block">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h4>Give a Talk</h4>
+                    <p>Talks are anything security, hacker, or technology related. We've had anything from how to setup a web proxy to quantum physics. It's a great way to share with the group what you're interested in</p>
+                    <ul class="list-inline social-icon">
+                        <li class="list-inline-item">
+                            <a href="https://twitter.com/roc2600">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </li>
+                         <li class="list-inline-item">
+                            <a href="https://rocdev.slack.com/messages/#security/">
+                                <i class="fab fa-slack"></i>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-12 col-md-4">
                 <div class="social-icons-block contact-meta-block">
-                    <i class="tf-ion-ios-contact"></i>
-                    <h4>Staying involved</h4>
+                    <i class="fas fa-building"></i>
+                    <h4>Sponsor an Event</h4>
+                    <p>Do you have a space you can share with us? Want to talk to us about your company? Consider sponsoring an event. </p>
                     <ul class="list-inline social-icon">
-                        {{ with .Site.Params.contact.facebook }}
                         <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-facebook"></i>
+                            <a href="https://twitter.com/roc2600">
+                                <i class="fab fa-twitter"></i>
                             </a>
                         </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.twitter }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.linkedin }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-linkedin"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.dribbble }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-dribbble"></i>
-                            </a>
-                        </li>
-                        {{ end }}
-                        {{ with .Site.Params.contact.instagram }}
-                        <li class="list-inline-item">
-                            <a href="{{.}}">
-                                <i class="tf-ion-social-instagram"></i>
-                            </a>
-                        </li>
-                        {{ end }}
                     </ul>
                 </div>
             </div>
         </div>
+
+        
     </div>
 </section>
 {{ end }}
