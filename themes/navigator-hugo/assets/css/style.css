@@ -590,6 +590,7 @@ a:focus, a:hover {
 .hero-area .block {
   color: #fff;
   padding-left: 30px;
+  padding-top: 120px;
 }
 
 @media (max-width: 480px) {
@@ -599,7 +600,7 @@ a:focus, a:hover {
 }
 
 .hero-area .block h2 {
-  font-size: 48px;
+  font-size: 58px;
   margin-bottom: 20px;
 }
 
@@ -1533,8 +1534,15 @@ a:focus, a:hover {
   padding-top: 150px;
 }
 
-#blog-single .section{
+.section.blog-single  {
+	background: "#000";
+	background-color: #000 !important;
  }
+
+.section.blog-single h2, li  {
+	color: #fe2d75 !important;
+}
+
 
 #blog-page {
   margin: 0 0 40px;
