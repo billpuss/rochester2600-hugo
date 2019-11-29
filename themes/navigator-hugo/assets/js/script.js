@@ -37,6 +37,36 @@
 			$(this).addClass("active");
 		});
 	}, 500);
+
+	/* ========================================================================= */
+	/*	Logo Carousel
+	/* =========================================================================  */
+	
+	//Init the slider
+	$('.logo-slider').slick({
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		infinite: true,
+		arrows: false,
+		autoplay: true,
+		autoplaySpeed: 200,
+		responsive: [{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1,
+					slidesToScroll: 1
+				}
+			}
+		]
+	});
+
 	
 	/* ========================================================================= */
 	/*	Testimonial Carousel
@@ -44,12 +74,12 @@
 	
 	//Init the slider
 	$('.testimonial-slider').slick({
-		slidesToShow: 2,
+		slidesToShow: 3,
 		slidesToScroll: 1,
 		infinite: true,
-		arrows: false,
+		arrows: true,
 		autoplay: true,
-		autoplaySpeed: 2000,
+		autoplaySpeed: 3000,
 		responsive: [{
 				breakpoint: 600,
 				settings: {

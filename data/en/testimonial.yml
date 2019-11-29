@@ -1,25 +1,25 @@
-enable : false
+enable : true
 item    :
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
+      Every time I come here I learn something new I should be concerned about.
     clientThumb : images/client-logo/clients-1.jpg
-    clientName  : Matt Cutts
-    clientDesignation: CEO , Company Name
+    clientName  : Aleks
+    clientDesignation: Lawyer
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
+      I wasn't murdered by my dreams were destroyed. Still would come back. 
     clientThumb : images/client-logo/clients-2.jpg
-    clientName  : Elon Mask
-    clientDesignation: CEO , Company Name
+    clientName  : Tyler
+    clientDesignation: Former RIT Student
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-1.jpg
-    clientName  : Matt Cutts
-    clientDesignation: CEO , Company Name
+      I attended these meetings so that I could learn how to trade body parts on the "dark web". They didn't help with that but I still learned something.
+    clientThumb : images/client-logo/clients-3.jpg
+    clientName  : Brian Backpack
+    clientDesignation: Drug Dealer
 
   - quote       : >
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum nulla, soluta dolorum. Eos earum, magni asperiores, unde corpori labore, enim, voluptatum officiis voluptates alias natus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officia. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quia?
-    clientThumb : images/client-logo/clients-2.jpg
-    clientName  : Elon Mask
-    clientDesignation: CEO , Company Name
+      The monthly news review is useful but also very depressing when you can't tell if the headlines are from 2020 or 2005. 
+    clientThumb : images/client-logo/clients-4.jpg
+    clientName  : Mark
+    clientDesignation: Pentester

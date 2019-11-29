@@ -18,16 +18,16 @@
                     </ul>
                 </div>
                 <div class="col-sm-3 col-md-3 col-lg-3">
-                    <h3>{{ .Site.Params.footerQuicklinkTitle }}</h3>
+                    <h3>{{ .Site.Params.community.Title }}</h3>
                     <ul>
-                        {{ range .Site.Menus.quicklink }}
+                        {{ range .Site.Menus.community }}
                         <li>
-                            <a href="{{ .URL | absLangURL }}">{{ i18n .Name }}</a>
+                            <a href="{{ .URL | absLangURL }}">{{ .Name }}</a>
                         </li>
                         {{ end }}
                     </ul>
                 </div>
-                <div class="col-sm-3 col-md-3 col-lg-3">
+                <!--<div class="col-sm-3 col-md-3 col-lg-3">
                     <h3>{{ .Site.Params.footerSubscribeTitle }}</h3>
                     <form class="subscribe-form">
                         <div class="form-group">
@@ -35,16 +35,12 @@
                         </div>
                         <button type="submit" class="btn btn-main-sm">Subscribe Now</button>
                     </form>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>
     <div class="footer-bottom">
-        <h5>Copyright 2018. All rights reserved.</h5>
-        <h6>Design and Developed by themefisher.com
-            <br>Get More
-            <a href="https://themefisher.com/free-bootstrap-templates/" target="_blank">Free Bootstrap Templates</a>
-        </h6>
+        <h5>Copyright 2020. All rights reserved.</h5>
     </div>
 </footer>
 {{ "<!-- end footer -->" | safeHTML }}
@@ -67,7 +63,6 @@
 <script src="{{ "plugins/filterzr/jquery.filterizr.min.js" | absURL }}"></script>
 {{ "<!-- Smooth Scroll js -->" | safeHTML }}
 <script src="{{ "plugins/smooth-scroll/dist/js/smooth-scroll.min.js" | absURL }}"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCC72vZw-6tGqFyRhhg5CkF2fqfILn2Tsw"></script>
 {{ "<!-- Main Script -->" | safeHTML }}
 {{ $script := resources.Get "js/script.js" | minify}}
 <script src="{{ $script.Permalink }}"></script>

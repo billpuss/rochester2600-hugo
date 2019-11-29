@@ -4,11 +4,30 @@
 
 {{ partial "about-sm.html" . }}
 
-{{ partial "philosophy.html" . }}
+{{ partial "about.html" . }}
 
-{{ partial "team.html" . }}
+{{ partial "testimonial.html" . }}
 
-{{ partial "cta.html" . }}
+{{ range (.Paginator 6).Pages }}
+<section class="about section" id="about">
+        <div class="container">
+            
+
+                <div class="row">
+                <div class="col-md-8 mx-auto">
+                                    {{ with .Params.Image }}
+                                    <img src="{{ . | absURL }}" class="w-100 mb-3" alt="{{ . }}">
+                                    {{ end }}
+                                    <a href="{{ .URL | absURL }}"><h2>{{ .Title }}</h2></a>
+                                    {{ .Content }}
+                                </div>
+                            </div>
+                {{ "<!-- single blog post -->" | safeHTML }}
+            </div>
+        </div>
+    </section>
+    {{ "<!-- Blog Section End -->" | safeHTML }}
+    {{ end }}
 
 {{ end }}
 

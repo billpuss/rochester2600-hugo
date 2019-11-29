@@ -44,11 +44,7 @@ DefaultContentLanguage = "en"
     logo = "images/logo.png"
     menufixed = false
 
-    #footerDescription = "Integer posuere erat a ante venenati dapibus posuere velit aliquet. Fusce dapibus, tellus cursus commodo, tortor mauris sed posuere."
-    #footerServiceTitle = "Service"
-    #footerQuicklinkTitle = "Quicklinks"
-    #footerAboutTitle = "About"
-    #footerSubscribeTitle = "Subscribe"
+    footerDescription = "We are a non-profit org made up of a group of hackers that like to chat about infosec stuff. We're professionals and we're amateurs. Come hang out."
 
 # Blog Section On Homepage
     [Languages.en.params.blog]
@@ -74,7 +70,11 @@ DefaultContentLanguage = "en"
         title   = "A community of people that happen to like security"
         description = "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae deleniti ipsa labore necessitatibus culpa veritatis quo accusantium, neque enim ea ad eaque iure, quas tempore velit, quibusdam dolor illo! Explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid quisquam maiores iste soluta, nihil dolorem?"
 
-    
+    [Languages.en.params.community]
+        enable  = true
+        topTitle= "Latest meeting updates"
+        title   = "Projects and Partners"
+        description = "Here are a variety of projects and partners we're involved with:"    
 
     # Contact Section
     [Languages.en.params.contact]
@@ -85,8 +85,6 @@ DefaultContentLanguage = "en"
         address = "14/05, Stockhome <br> Victori Palace , United States"
         #facebook= "https://www.facebook.com/"
         twitter = "https://twitter.com/roc2600"
-        mapLatitude = "51.507351"
-        mapLongitude= "-0.127758"
         mapMarker   = "images/marker.png"
 
     # Call to Action Section on About Page
@@ -104,24 +102,63 @@ DefaultContentLanguage = "en"
     # Navbar Menus
     [[menu.nav]]
         name    = "about"
-        url     = "/#about"
-        weight  = 2
+        url     = "about"
+        weight  = 2        
+        
     [[menu.nav]]
         name    = "meetings"
-        url     = '/meetings'
+        url     = 'meetings'
         weight  = 3
+        
+
     [[menu.nav]]
         name    = "presentations"
-        url     = "/presentations"
+        url     = "presentations"
         weight  = 4
+        
+
     [[menu.nav]]
         name    = "contact"
-        url     = "/contact"
+        url     = "contact"
         weight  = 6
+        
 
     [[menu.nav]]
         name    = "news"
+        pre     = '<i class="fas fa-external-link-alt"></i>'
         url     = "https://links.rochester2600.com"
         weight  = 7
+        
 
+
+    # Community Links
+    [[menu.community]]
+        name    = "BSidesROC"
+        url     = "https://www.bsidesroc.com"
+        weight  = 1
+        pre     = '<i class="fas fa-users"></i>'
+    
+    [[menu.community]]
+        name    = "Hack Rochester"
+        url     = "https://www.hackrochester.com"
+        weight  = 2
+        pre     = '<i class="fas fa-user-secret"></i>'
+
+    [[menu.community]]
+        name    = "Rochester ISSA"
+        url     = "https://rocissa.org"
+        weight  = 3
+        pre     = '<i class="fas fa-user-lock"></i>'
+
+    [[menu.community]]
+        name    = "OWASP Rochester"
+        url     = "https://www.owasp.org/index.php/Rochester"
+        weight  = 4
+        pre     = '<i class="fas fa-user-shield"></i>'
+
+    [[menu.community]]
+        name    = "RoCDev"
+        url     = "https://rocdev.org"
+        weight  = 5
+        pre     = '<i class="fas fa-code"></i>'
     

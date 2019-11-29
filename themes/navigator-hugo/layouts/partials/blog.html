@@ -18,9 +18,9 @@
 
             <article class="col-12 col-md-4">
                 <div class="post-item">
-                    {{ if isset .Params "image" }}
+                    {{ with .Params.image }}
                     <div class="post-thumb">
-                        <img class="img-fluid shadow rounded" src="{{ .Params.image | absURL }}" alt="{{ .Params.image }}">
+                        <img class="img-fluid shadow rounded" src="{{ . | absURL }}" alt="{{ . }}">
                     </div>
                     {{ end }}
                     <div class="post-title">

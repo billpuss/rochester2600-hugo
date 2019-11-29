@@ -1,0 +1,28 @@
+<section class="community section" id="community">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="title text-center">
+                    {{ with .Site.Params.community.topTitle }}
+                    <h4>{{ . }}</h4>{{ end }}
+                    <h2>{{ .Site.Params.community.Title }}</h2>
+                    <span class="border"></span>
+                    {{ with .Site.Params.community.description }}
+                    <p>{{ . }}</p>
+                    {{ end }}
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+        {{ range .Site.Menus.community }}
+            <div class="col-12 col-md-4">
+                <div class="community-block community-meta-block">
+                    <a href="{{ .URL | absLangURL }}">{{ .Pre }}</a>
+                    <h4>{{ .Name }}</h4>
+                </div>
+            </div>
+        {{ end }}           
+        </div>
+    </div>

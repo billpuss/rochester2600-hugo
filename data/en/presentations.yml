@@ -1,0 +1,119 @@
+enable  : true
+topTitle: Recent talks
+title   : Presentations
+subtitle: Below are an example of some of the presentations we've done. Not all talks are posted so you should show up in person to get the full effect. 
+
+filtermenu :
+  - name      : Hacking
+    category  : hacking
+
+  - name      : Securing
+    category  : securing
+
+  - name      : Development
+    category  : development
+
+    
+  - name      : NSFW
+    category  : nsfw
+
+item   :
+  - title : Container Registry Metadata Searcher
+    image : images/presentations/container-registry-metadata-searcher.png
+    slideurl : https://docs.google.com/presentation/d/e/2PACX-1vSwk7eXxtpU1sB79eWu3dWa1oO0z3qClI0a8oScT1CySEHWdze2SrY07vmgVerOTgoirxne1EXhEi7Q/embed?start=false&loop=false&delayms=3000
+    category  : securing, hacking, devops, developer
+
+  - title : Package Manamamama
+    image : images/presentations/package-mangelement.png
+    slideurl : https://docs.google.com/presentation/d/e/2PACX-1vSwk7eXxtpU1sB79eWu3dWa1oO0z3qClI0a8oScT1CySEHWdze2SrY07vmgVerOTgoirxne1EXhEi7Q/embed?start=false&loop=false&delayms=3000
+    category  : securing, hacking
+
+  - title : Hardening SSH Configuration
+    image : images/presentations/hardening-ssh-configurations.png
+    slideurl : //www.slideshare.net/slideshow/embed_code/key/3fpWFKTntRz3OF
+    category  : securing
+
+  - title : Next Generation Tor Protocol
+    image : images/presentations/next-generation-tor-protocol.png
+    slideurl : https://docs.google.com/presentation/d/e/2PACX-1vSBOP3vF055ee_vGYUkBg7MnLy8fapxHk9tWHamNknshRhC_PgTOSt_R3zdgyhj7KfN6TEjpTLerwEW/embed?start=false&loop=false&delayms=3000
+    category  : hacking, other
+
+  - title : Two photons, one ket
+    image : images/presentations/two-photons-one-ket.png
+    slideurl : https://docs.google.com/presentation/d/e/2PACX-1vQIaaoo9TWX5qAsZwVYEX4aU6Kw33MQQ42FbRLSlRaFjYYGr8oE-rFYGEMn9HjTa2LyG8yiY2gcSuYP/embed?start=false&loop=false&delayms=3000
+    category  : other, nsfw
+
+  - title : DNSSEC
+    image : images/presentations/dnssec.png
+    slideurl : https://docs.google.com/presentation/d/1EFIuzT1T7J3GE_CoMgSZvL6aqbn0ezKMv4ymFCT55GQ/embed?start=false&loop=false&delayms=3000
+    category  : securing, networking
+
+  - title : K8s - Pods to root in minutes
+    image : images/presentations/k8s-pods-to-root-in-minutes.png
+    slideurl : https://docs.google.com/presentation/d/1M2d6l9W4P1Gdiqgy4P2S0Q5RoHQtbPox-_CarIsVTTE/embed?start=false&loop=false&delayms=3000
+    category  : development, devops
+
+  - title : The Attrocities of Desktop Keyrings
+    image : images/presentations/the-attrocities-of-desktop-keyrings.png
+    slideurl : https://docs.google.com/presentation/d/1M2d6l9W4P1Gdiqgy4P2S0Q5RoHQtbPox-_CarIsVTTE/embed?start=false&loop=false&delayms=3000
+    category  : hacking, development
+
+  - title : Web Browsing Like It's 1984
+    image : images/presentations/web-browsing-like-its-1984.png
+    slideurl : https://docs.google.com/presentation/d/1IZ5ENctNE4IAoKqGLMJA5_eK2BcLZ2ibgWWBerz-ncw/embed?start=false&loop=false&delayms=3000
+    category  : hacking
+
+  - title : The State of WiFi Security 
+    image : images/presentations/the-state-of-wifi-security.png
+    slideurl : //www.slideshare.net/slideshow/embed_code/key/AHQAHBS0N8Ss3X
+    category  : hacking, securing
+
+  - title : Just (Mouse) Jackin' It
+    image : images/presentations/just-mouse-jackin-it.png
+    slideurl : //www.slideshare.net/slideshow/embed_code/key/7aQZ6IDSvOwGLI
+    category  : hacking, other
+
+  - title : Jelquing With Ethereum
+    image : images/presentations/jelqing-with-ethereum.png
+    slideurl : //www.slideshare.net/slideshow/embed_code/key/bu7Ef6842QHiVC
+    category  : hacking, cryptocurrency, nsfw
+
+  - title : Docker Security
+    image : images/presentations/docker-security.png
+    slideurl : //www.slideshare.net/slideshow/embed_code/key/fa4i0q8jsxobm1
+    category  : hacking, securing, devops
+
+  - title : NSA and VPN
+    image : images/presentations/nsa-and-vpn.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/key/5FLhmkL3jDfk6O
+    category  : hacking, securing
+
+  - title : Corporate Spies
+    image : images/presentations/corporate-spies.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/key/kcEkkqWv48Luf5
+    category  : hacking, other
+
+  - title : Laverna
+    image : images/presentations/laverna.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/key/nMl8tSbRjopCpU
+    category  : securing
+
+  - title : RTLSDR
+    image : images/presentations/rtlsdr.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/29679039
+    category  : hacking, other
+
+  - title : Anti-Virus Evasion Deuce
+    image : images/presentations/anti-virus-evasion-deuce.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/29748531
+    category  : hacking, networking
+
+  - title : Liberte & Cables vs TAILS & Bitmessage
+    image : images/presentations/liberte-and-cables.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/key/gk7zndpLMDMFpH
+    category  : Hacking, securing
+
+  - title : A Brief History of Teledildonics
+    image : images/presentations/a-brief-history-of-teledildonics.png
+    slideurl : https://www.slideshare.net/slideshow/embed_code/29748530
+    category  : nsfw
