@@ -3,6 +3,7 @@ jobs:
   build:
     docker:
       - image: felicianotech/docker-hugo:latest
+<<<<<<< HEAD
     working_directory: ~/repo
     steps:
       - checkout
@@ -14,3 +15,54 @@ jobs:
              paths:
                 - repo
 
+=======
+    working_cirectory: ~/project/
+    steps:
+      - checkout
+      - run: git submodule sync
+      - run: git submodule update --init
+      - run:
+          name: "Run hugo"
+          command: hugo -v 
+      - persist_to_workspace:
+          root: /root/
+          paths:
+             - project
+  deploy:
+    docker:
+      - image: circleci/python:2
+    working_directory: ~/project
+    steps:
+      #- checkout
+
+      # Download and cache dependencies
+      # - restore_cache:
+      #     keys:
+      #     - v1-dependencies-{{ checksum "Pipfile" }}
+      #     # fallback to using the latest cache if no exact match is found
+      #     - v1-dependencies-
+      - attach_workspace:
+          at: /home/circleci
+
+      - run: echo 'export PATH="$PATH:/home/circleci/.local/bin"' >> $BASH_ENV
+      - run: cd ~/project
+      - run:
+          name: fucking gsutil install
+          command: |
+            pip install gsutil --user
+
+      - run:
+          name: run deploy script
+          command: |
+            cd tools
+            echo $GCS | base64 -d > 2600.json
+            ./deploy.sh
+workflows:
+  version: 2
+  commit:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+>>>>>>> a4d1cdefb6f21cca03eb591b7daa7ca1aa68e173
