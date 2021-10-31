@@ -1,7 +1,7 @@
 Rochester2600.com public website
 ===========
 
-lol
+lol 2
 ## Setup and Contributions
 
 * Install Hugo
